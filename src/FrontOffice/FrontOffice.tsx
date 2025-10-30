@@ -5,7 +5,7 @@ import HeroCard from "./components/HeroCard/HeroCard";
 
 import "./App.css";
 
-export default function App() {
+export default function FrontOffice() {
   return (
     <>
       <Header></Header>
