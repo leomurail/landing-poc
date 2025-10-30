@@ -1,13 +1,12 @@
 import React from "react";
 import "./Header.css";
 import Button from "../Button/Button";
-import logo from "../../img/logo_keepup.webp";
 
 const Header: React.FC = () => {
   return (
     <header className="header">
       <div className="header__logo">
-        <img src={logo} alt="Logo" />
+        <img src="/img/logo_keepup.webp" alt="Logo"/>
       </div>
 
       <nav className="header__nav">
