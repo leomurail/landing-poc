@@ -3,7 +3,7 @@ import Button from "./components/Button/Button";
 import Header from "./components/Header/Header";
 import HeroCard from "./components/HeroCard/HeroCard";
 
-import "./App.css";
+import "./FrontOffice.css";
 
 export default function FrontOffice() {
   return (
