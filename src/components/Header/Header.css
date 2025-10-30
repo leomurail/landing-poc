@@ -1,0 +1,25 @@
+.header {
+  padding: 15px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to bottom, #121212 55%, transparent 130%);
+}
+
+.header__nav {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  color: #fff;
+}
+
+.header__logo img {
+  width: 150px;
+}
+
+.header__nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+}

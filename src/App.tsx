@@ -1,13 +1,32 @@
-import './App.css';
-import Title from './components/Title/Title';
+import Title from "./components/Title/Title";
+import Button from "./components/Button/Button";
+import Header from "./components/Header/Header";
+import HeroCard from "./components/HeroCard/HeroCard";
 
-function App() {
+import "./App.css";
 
+export default function App() {
   return (
     <>
-      <Title/>
+      <Header></Header>
+      <Button variant="secondary" size="s">
+        Click me in my small pussy
+      </Button>
+      <Title>Landing POC</Title>
+      <div id="containerCards">
+        <HeroCard
+          title="Soyez informé "
+          text="Accédez à la liste des Airdrops prometteurs"
+        />
+        <HeroCard
+          title="Soyez informé "
+          text="Accédez à la liste des Airdrops prometteurs"
+        />
+        <HeroCard
+          title="Soyez informé "
+          text="Accédez à la liste des Airdrops prometteurs"
+        />
+      </div>
     </>
-  )
+  );
 }
-
-export default App

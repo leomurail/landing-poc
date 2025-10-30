@@ -1,3 +1,9 @@
-export default function Title(){
-    return <h1>Landing POC</h1>;
+import "./Title.css";
+
+interface TitleProps {
+  children: React.ReactNode;
+}
+
+export default function Title({ children }: TitleProps) {
+  return <h1>{children}</h1>;
 }
