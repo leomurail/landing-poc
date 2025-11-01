@@ -1,0 +1,51 @@
+#dashboard main {
+  padding-block: 50px;
+  padding-inline: 20px;
+  position: relative;
+  width: 100%;
+}
+
+#dashboard main section {
+  max-width: 800px;
+}
+
+#dashboard main [data-slot="sidebar-trigger"] {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+#dashboard main h1,
+#dashboard main h2,
+#dashboard main h3,
+#dashboard main h4,
+#dashboard main h5,
+#dashboard main h6 {
+  font-weight: bold;
+}
+
+#dashboard main h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+#dashboard main h2 {
+  font-size: 28px;
+}
+
+#dashboard main h3 {
+  font-size: 24px;
+}
+
+#dashboard main h4 {
+  font-size: 22px;
+}
+
+#dashboard main h5,
+#dashboard main h6 {
+  font-size: 20px;
+}
+
+#dashboard .info {
+  font-size: 14px;
+}

@@ -5,7 +5,7 @@
   "tsx": true,
   "tailwind": {
     "config": "",
-    "css": "src/index.css",
+    "css": "src/styles/shadcdn.css",
     "baseColor": "neutral",
     "cssVariables": true,
     "prefix": ""
@@ -13,7 +13,7 @@
   "iconLibrary": "lucide",
   "aliases": {
     "components": "@/components",
-    "utils": "@/lib/utils",
+    "utils": "@/lib/shadcdn/utils",
     "ui": "@/components/shadcdn/ui",
     "lib": "@/lib/shadcdn/",
     "hooks": "@/hooks/shadcdn/"
