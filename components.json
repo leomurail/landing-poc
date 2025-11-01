@@ -16,7 +16,7 @@
     "utils": "@/lib/utils",
     "ui": "@/components/shadcdn/ui",
     "lib": "@/lib/shadcdn/",
-    "hooks": "@/hooks"
+    "hooks": "@/hooks/shadcdn/"
   },
   "registries": {}
 }
