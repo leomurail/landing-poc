@@ -3,12 +3,12 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-#front-office h1 {
-  color: white;
+#front-office {
+  background-color: #121212;
 }
 
-#front-office body {
-  background-color: #121212;
+#front-office h1 {
+  color: white;
 }
 
 #front-office #containerCards {
