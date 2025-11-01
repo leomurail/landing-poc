@@ -1,6 +1,7 @@
 @import "./shadcdn.css";
 @import "./keepup.css";
+@import "tw-animate-css";
 
 body {
-  background-color: #121212 !important;
+  background-color: #121212;
 }

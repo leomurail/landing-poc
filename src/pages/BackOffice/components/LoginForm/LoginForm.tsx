@@ -12,8 +12,12 @@ import { Form } from "@/components/shadcdn/ui/form";
 
 import "./LoginForm.css";
 import { Button } from "@/components/shadcdn/ui/button";
+import { useNavigate } from "react-router";
 
-export default function LoginForm() {
+interface LoginFormProps {
+  redirectTo: string;
+}
+export default function LoginForm({ redirectTo }: LoginFormProps) {
   const form = useForm({
     defaultValues: {
       userName: "",
@@ -21,12 +25,11 @@ export default function LoginForm() {
     },
   });
 
+  const navigate = useNavigate();
+
   async function handleLogin(data: { userName: string; password: string }) {
     const { userName, password } = await data;
-
-    if (userName == "admin" && password == "admin") {
-      console.log(true);
-    }
+    if (userName == "admin" && password == "admin") navigate(redirectTo);
   }
 
   return (
