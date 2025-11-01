@@ -7,8 +7,8 @@ import "./FrontOffice.css";
 
 export default function FrontOffice() {
   return (
-    <>
-      <Header></Header>
+    <section id="front-office" className="keep-up">
+      <Header />
       <Button variant="secondary" size="s">
         Click me in my small pussy
       </Button>
@@ -27,6 +27,6 @@ export default function FrontOffice() {
           text="Accédez à la liste des Airdrops prometteurs"
         />
       </div>
-    </>
+    </section>
   );
 }
