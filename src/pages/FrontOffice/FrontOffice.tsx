@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Title from "./components/Title/Title";
 import Button from "./components/Button/Button";
 import Header from "./components/Header/Header";
@@ -12,8 +11,6 @@ import KeyStatCard from "./components/KeyStatCard/KeyStatCard";
 import "./FrontOffice.css";
 
 export default function FrontOffice() {
-  const [searchValue, setSearchValue] = useState("");
-
   return (
     <section id="front-office" className="keep-up">
       <Header />
@@ -34,10 +31,7 @@ export default function FrontOffice() {
         Click me in my small pussy
       </Button>
       <Title>Landing POC</Title>
-      <SearchBar
-        value={searchValue}
-        onChange={(e) => setSearchValue(e.target.value)}
-      />
+      <SearchBar placeholder="Rechercher un airdrop..." />
       <div id="containerCards">
         <HeroCard
           title="Soyez informé "

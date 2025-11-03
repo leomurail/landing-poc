@@ -37,3 +37,11 @@ $ npm run lint
 ```
 
 Les fichiers construit vont dans /dist
+
+## To Do
+
+- css pascalcase to kebabcase (KeyStat => key-stat)
+- add logo-keepup.webp in the public folder
+- adapt style to the maquette (review)
+- do last components (footer, roundbtn)
+- do integration (page)
