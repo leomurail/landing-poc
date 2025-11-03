@@ -1,21 +1,20 @@
-import React from "react";
 import "./Button.css";
 
 interface ButtonProps {
   children: React.ReactNode;
   onClick?: () => void;
   type?: "button";
-  variant?: "primary" | "secondary";
+  variant?: "primary" | "secondary" | "toggle";
   size?: "s" | "m" | "l";
 }
 
-const Button: React.FC<ButtonProps> = ({
+export default function Button({
   children,
   onClick,
   type = "button",
   variant = "primary",
   size = "m",
-}) => {
+}: ButtonProps) {
   const className = `btn ${variant} ${size}`;
 
   return (
@@ -23,6 +22,4 @@ const Button: React.FC<ButtonProps> = ({
       {children}
     </button>
   );
-};
-
-export default Button;
+}

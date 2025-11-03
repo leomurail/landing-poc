@@ -1,0 +1,51 @@
+.card-airdrop {
+  background-color: #1a1a1a;
+  border-radius: 7px;
+  padding: 20px;
+  color: #e0e0e0;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.img_statu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.img_statu img {
+  width: 50px;
+  border-radius: 5px;
+}
+
+.img_statu p {
+  background: #4800d0;
+  color: #ffffff;
+  padding: 7px 10px;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.card-airdrop__content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-airdrop__content h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.card-airdrop__content p {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.Card__cta button {
+  width: 100%;
+}

@@ -1,4 +1,3 @@
-import React from "react";
 import "./HearoCard.css";
 
 interface HeroCardProps {
@@ -6,13 +5,11 @@ interface HeroCardProps {
   text: string;
 }
 
-const HeroCard: React.FC<HeroCardProps> = ({ title, text }) => {
+export default function HeroCard({ title, text }: HeroCardProps) {
   return (
     <div className="card">
       <h3 className="card_title">{title}</h3>
       <p className="card_text">{text}</p>
     </div>
   );
-};
-
-export default HeroCard;
+}
