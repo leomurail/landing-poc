@@ -5,7 +5,7 @@ interface SearchBarProps {
 }
 
 export default function SearchBar({
-  placeholder = "placeholder",
+  placeholder = "placeolder",
 }: SearchBarProps) {
   return (
     <div className="searchbar">
