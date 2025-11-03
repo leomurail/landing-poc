@@ -1,12 +1,11 @@
-import React from "react";
 import "./Header.css";
 import Button from "../Button/Button";
 
-const Header: React.FC = () => {
+export default function Header() {
   return (
     <header className="header">
       <div className="header__logo">
-        <img src="/img/logo_keepup.webp" alt="Logo"/>
+        <img src="/img/logo_keepup.webp" alt="Logo" />
       </div>
 
       <nav className="header__nav">
@@ -24,6 +23,4 @@ const Header: React.FC = () => {
       </div>
     </header>
   );
-};
-
-export default Header;
+}
