@@ -1,3 +1,9 @@
+import AirdropForm from "../../components/AirdropForm/AirdropForm";
+
 export default function AirdropCreate() {
-  return <h2>Create</h2>;
+  return (
+    <section id="airdrop-create">
+      <AirdropForm />
+    </section>
+  );
 }

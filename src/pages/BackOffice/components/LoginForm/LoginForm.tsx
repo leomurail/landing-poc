@@ -1,22 +1,15 @@
-import {
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/shadcdn/ui/form";
-import "./LoginForm.css";
-import { Input } from "@/components/shadcdn/ui/input";
-import { useForm } from "react-hook-form";
 import { Form } from "@/components/shadcdn/ui/form";
-
-import "./LoginForm.css";
+import { useForm } from "react-hook-form";
 import { Button } from "@/components/shadcdn/ui/button";
 import { useNavigate } from "react-router";
+import CustomField from "../InputField/InputField";
+
+import "./LoginForm.css";
 
 interface LoginFormProps {
   redirectTo: string;
 }
+
 export default function LoginForm({ redirectTo }: LoginFormProps) {
   const form = useForm({
     defaultValues: {
@@ -36,31 +29,19 @@ export default function LoginForm({ redirectTo }: LoginFormProps) {
     <div className="login-wrapper">
       <Form {...form}>
         <form onSubmit={form.handleSubmit(handleLogin)}>
-          <FormField
-            control={form.control}
+          <CustomField
+            form={form}
             name="userName"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>Username</FormLabel>
-                <FormControl>
-                  <Input placeholder="jhon_doe" {...field} />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
+            label="Nom d'utilisateur"
+            placeholder="jhon_doe"
           />
-          <FormField
-            control={form.control}
+
+          <CustomField
+            form={form}
             name="password"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>Password</FormLabel>
-                <FormControl>
-                  <Input type="password" placeholder="password..." {...field} />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
+            label="Mot de passe"
+            placeholder="password..."
+            type="password"
           />
           <Button type="submit">Submit</Button>
         </form>
