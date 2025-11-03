@@ -1,6 +1,6 @@
-# Landing page 
+# Landing page
 
-## Getting Started 
+## Getting Started
 
 ### Start install
 
@@ -17,19 +17,23 @@ $ npm run dev
 ## Deployement
 
 ### Run build
+
 ```bash
 $ npm run build
 ```
 
 ### Run preview
+
 ```bash
 $ npm run preview
 ```
 
-## Tests 
+## Tests
 
 ### Run ESLint tests
+
 ```bash
 $ npm run lint
 ```
+
 Les fichiers construit vont dans /dist
