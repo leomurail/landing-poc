@@ -1,28 +1,26 @@
-.container {
+.container-how-it-work {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: var(--gap-medium-sm);
 }
 
-.nuber_part h3 {
-  font-size: 32px;
-  font-weight: 500;
-  color: #ffffff;
+.number-part-how-it-work .number-part-how-it-work-number {
+  font-size: var(--font-size-40);
+  font-weight: var(--weight-semi-bold);
 }
 
-.nuber_part p {
-  font-size: 40px;
-  font-weight: 600;
-  color: #ffffff;
+.container-how-it-work .how-it-work-part-text {
+  font-size: var(--font-size-32);
+  font-weight: var(--weight-medium);
 }
 
-.nuber_part {
+.number-part-how-it-work {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
   width: 70px;
   height: 70px;
-  background: #4800d0;
+  background: var(--color-dark-purple);
 }

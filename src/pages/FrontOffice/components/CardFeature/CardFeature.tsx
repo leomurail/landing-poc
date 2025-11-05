@@ -10,8 +10,8 @@ export default function CardFeature({ title, text, imgSrc }: CardFeatureProps) {
   return (
     <div className="card-feature">
       <img src={imgSrc} alt={title} />
-      <h3>{title}</h3>
-      <p>{text}</p>
+      <h3 className="card-feature-title">{title}</h3>
+      <p className="card-feature-text">{text}</p>
       <Button variant="primary" size="m">
         Rester alerté
       </Button>

@@ -6,11 +6,11 @@ interface HowItWorkPartProps {
 }
 export default function CardAirdrop({ number, text }: HowItWorkPartProps) {
   return (
-    <div className="container">
-      <div className="nuber_part">
-        <p>{number}</p>
+    <div className="container-how-it-work">
+      <div className="number-part-how-it-work">
+        <p className="number-part-how-it-work-number">{number}</p>
       </div>
-      <h3>{text}</h3>
+      <h3 className="how-it-work-part-text">{text}</h3>
     </div>
   );
 }

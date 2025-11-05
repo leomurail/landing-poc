@@ -11,11 +11,11 @@ export default function SearchBar({
     <div className="searchbar">
       <input
         type="text"
-        className="searchbar__input"
+        className="searchbar-input"
         placeholder={placeholder}
       />
-      <button className="searchbar__btn">
-        <img src="icon/search.svg" alt="Rechercher" />
+      <button className="searchbar-btn">
+        <img src="img/svg/search.svg" alt="Rechercher" />
       </button>
     </div>
   );
