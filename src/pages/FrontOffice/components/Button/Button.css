@@ -1,6 +1,10 @@
 .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 15px 30px;
   border-radius: 5px;
+  gap: var(--gap-small-xl);
   cursor: pointer;
   color: var(--color-text-primary);
   border: none;
@@ -25,4 +29,9 @@
 
 .btn.s {
   font-size: var(--font-size-14);
+}
+
+.btn-img {
+  width: 24px;
+  height: 24px;
 }

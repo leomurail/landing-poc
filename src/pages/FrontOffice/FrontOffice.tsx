@@ -9,6 +9,8 @@ import CardFeature from "./components/CardFeature/CardFeature";
 import KeyStatCard from "./components/KeyStatCard/KeyStatCard";
 import RoundButton from "./components/RoundButton/RoundButton";
 import Footer from "./components/Footer/Footer";
+import HeroPart from "./parts/HeroPart/HeroPart";
+import AirdropListPart from "./parts/AirdropListPart/AirdropListPart";
 
 import "./FrontOffice.css";
 
@@ -16,6 +18,8 @@ export default function FrontOffice() {
   return (
     <section id="front-office" className="keep-up">
       <Header />
+      <HeroPart />
+      <AirdropListPart />
       <KeyStatCard />
       <CardFeature
         title="Nous vous alertons"
@@ -29,7 +33,13 @@ export default function FrontOffice() {
         title="Blast"
         text="BlockChain"
       />
-      <Button variant="primary" size="s">
+      <Button
+        variant="primary"
+        size="s"
+        imgSrc="/img/svg/eye.svg"
+        imgAlt="eye icon"
+        imgPosition="right"
+      >
         Click me in my small pussy
       </Button>
       <Title>Landing POC</Title>
