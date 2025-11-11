@@ -5,7 +5,7 @@ export default function AdminLogin() {
   return (
     <section id="back-office-login">
       <h1>Back Office</h1>
-      <LoginForm redirectTo="/back-office/dashboard/" />
+      <LoginForm redirectTo="/back-office/dashboard/home" />
     </section>
   );
 }

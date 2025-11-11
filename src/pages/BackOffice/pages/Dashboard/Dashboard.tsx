@@ -5,8 +5,16 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from "@/components/shadcdn/ui/sidebar";
+import { useAuth } from "@/hooks/useAuth/useAuth";
+import { useEffect } from "react";
 
 export default function Dashboard() {
+  const { checkLogin } = useAuth();
+
+  useEffect(() => {
+    checkLogin();
+  }, []);
+
   return (
     <section id="dashboard">
       <SidebarProvider>

@@ -14,28 +14,31 @@ import AirdropRead from "./pages/BackOffice/pages/Dashboard/pages/DashboardAirdr
 import AirdropDelete from "./pages/BackOffice/pages/Dashboard/pages/DashboardAirdrop/pages/AirdropDelete/AirdropDelete.tsx";
 import AirdropList from "./pages/BackOffice/pages/Dashboard/pages/DashboardAirdrop/pages/AirdropList/AirdropList.tsx";
 import AirdropUpdate from "./pages/BackOffice/pages/Dashboard/pages/DashboardAirdrop/pages/AirdropUpdate/AirdropUpdate.tsx";
+import { CookiesProvider } from "react-cookie";
 
 createRoot(document.getElementById("root") as Container).render(
   <StrictMode>
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<FrontOffice />} />
+      <CookiesProvider>
+        <Routes>
+          <Route path="/" element={<FrontOffice />} />
 
-        <Route path="back-office" element={<BackOffice />}>
-          <Route path="login" element={<AdminLogin />} />
+          <Route path="back-office" element={<BackOffice />}>
+            <Route path="login" element={<AdminLogin />} />
 
-          <Route path="dashboard" element={<Dashboard />}>
-            <Route path="home" element={<DashboardHome />} />
-            <Route path="airdrops" element={<DashboardAirdrop />}>
-              <Route path="list" element={<AirdropList />} />
-              <Route path="create" element={<AirdropCreate />} />
-              <Route path="read/:id" element={<AirdropRead />} />
-              <Route path="update/:id" element={<AirdropUpdate />} />
-              <Route path="delete/:id" element={<AirdropDelete />} />
+            <Route path="dashboard" element={<Dashboard />}>
+              <Route path="home" element={<DashboardHome />} />
+              <Route path="airdrops" element={<DashboardAirdrop />}>
+                <Route path="list" element={<AirdropList />} />
+                <Route path="create" element={<AirdropCreate />} />
+                <Route path="read/:id" element={<AirdropRead />} />
+                <Route path="update/:id" element={<AirdropUpdate />} />
+                <Route path="delete/:id" element={<AirdropDelete />} />
+              </Route>
             </Route>
           </Route>
-        </Route>
-      </Routes>
+        </Routes>
+      </CookiesProvider>
     </BrowserRouter>
   </StrictMode>
 );

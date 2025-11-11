@@ -11,6 +11,9 @@ import {
   SidebarMenuItem,
 } from "@/components/shadcdn/ui/sidebar";
 import { Link } from "react-router";
+import LogoutButton from "../LogoutButton/LogoutButton";
+
+import "./AppSideBar.css";
 
 interface menuItem {
   title: string;
@@ -73,6 +76,9 @@ export default function AppSidebar() {
                 );
               })}
             </SidebarMenu>
+            <div className="app-sidebar-logout">
+              <LogoutButton />
+            </div>
           </SidebarGroupContent>
         </SidebarGroup>
       </SidebarContent>

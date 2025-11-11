@@ -1,8 +1,8 @@
 import { Form } from "@/components/shadcdn/ui/form";
 import { useForm } from "react-hook-form";
 import { Button } from "@/components/shadcdn/ui/button";
-import { useNavigate } from "react-router";
 import CustomField from "../InputField/InputField";
+import { useAuth } from "@/hooks/useAuth/useAuth";
 
 import "./LoginForm.css";
 
@@ -18,11 +18,13 @@ export default function LoginForm({ redirectTo }: LoginFormProps) {
     },
   });
 
-  const navigate = useNavigate();
+  const { login } = useAuth();
 
   async function handleLogin(data: { userName: string; password: string }) {
     const { userName, password } = await data;
-    if (userName == "admin" && password == "admin") navigate(redirectTo);
+    if (userName == "admin" && password == "admin") {
+      login(redirectTo);
+    }
   }
 
   return (
