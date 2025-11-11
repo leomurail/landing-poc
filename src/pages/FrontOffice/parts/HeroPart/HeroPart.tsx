@@ -1,10 +1,12 @@
 import "./HeroParte.css";
 import Button from "../../components/Button/Button";
 import HeroCard from "../../components/HeroCard/HeroCard";
+import RoundButton from "../../components/RoundButton/RoundButton";
 
 export default function Header() {
   return (
     <section id="hero-part">
+      <RoundButton />
       <div className="hero-content">
         <div className="hero-content-logo-title">
           <img

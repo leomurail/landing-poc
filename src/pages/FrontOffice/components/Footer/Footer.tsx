@@ -60,10 +60,22 @@ export default function Footer() {
       <div className="footer-container-cta">
         <h2 className="footer-container-title">Connect ton Telegram</h2>
         <div className="footer-cta">
-          <Button variant="primary" size="s">
+          <Button
+            variant="primary"
+            size="s"
+            imgSrc="/img/webp/telegram.webp"
+            imgAlt="telegram icon"
+            imgPosition="right"
+          >
             Bot
           </Button>
-          <Button variant="secondary" size="s">
+          <Button
+            variant="secondary"
+            size="s"
+            imgSrc="/img/svg/eye.svg"
+            imgAlt="eye icon"
+            imgPosition="right"
+          >
             Airdrops
           </Button>
         </div>

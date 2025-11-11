@@ -3,7 +3,7 @@ import Button from "../../components/Button/Button";
 import CardAirdrop from "../../components/CardAirdrop/CardAirdrop";
 import SearchBar from "../../components/SearchBar/SearchBar";
 
-export default function Header() {
+export default function AirdropListPart() {
   return (
     <section id="airdrop-list-part">
       <div id="airdrop-search-part">

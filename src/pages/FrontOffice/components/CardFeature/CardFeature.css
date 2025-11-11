@@ -17,4 +17,5 @@ img {
 
 .card-feature .card-feature-text {
   font-size: var(--font-size-20);
+  text-align: center;
 }

@@ -2,7 +2,7 @@
   display: flex;
   width: 100%;
   padding: 100px;
-
+  background-color: var(--color-layer-1);
   justify-content: space-between;
 }
 .footer-nav {
@@ -33,6 +33,7 @@
 
 .footer-container-cta {
   display: flex;
+  width: 360px;
   flex-direction: column;
   gap: var(--gap-medium-sm);
 }

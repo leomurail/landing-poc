@@ -25,6 +25,7 @@
 
 .key-stat-part .key-stat-title {
   font-size: var(--font-size-40);
+  color: var(--color-text-secondary);
 }
 .key-stat-part .key-stat-text {
   font-size: var(--font-size-20);

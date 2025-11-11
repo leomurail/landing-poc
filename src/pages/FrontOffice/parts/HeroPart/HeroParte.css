@@ -11,6 +11,11 @@
   gap: var(--gap-large-l);
   padding: 140px 0 40px 0;
 }
+#hero-part .round-btn {
+  position: absolute;
+  top: 95%;
+  left: 95%;
+}
 .hero-content {
   display: flex;
   flex-direction: column;

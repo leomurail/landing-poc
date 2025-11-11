@@ -1,4 +1,4 @@
-import "./HowItWorkPart.css";
+import "./HowItWorkCard.css";
 
 interface HowItWorkPartProps {
   number: number;
