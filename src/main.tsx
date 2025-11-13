@@ -14,28 +14,57 @@ import AirdropRead from "./pages/BackOffice/pages/Dashboard/pages/DashboardAirdr
 import AirdropDelete from "./pages/BackOffice/pages/Dashboard/pages/DashboardAirdrop/pages/AirdropDelete/AirdropDelete.tsx";
 import AirdropList from "./pages/BackOffice/pages/Dashboard/pages/DashboardAirdrop/pages/AirdropList/AirdropList.tsx";
 import AirdropUpdate from "./pages/BackOffice/pages/Dashboard/pages/DashboardAirdrop/pages/AirdropUpdate/AirdropUpdate.tsx";
+import { CookiesProvider } from "react-cookie";
+import DashboardCategory from "./pages/BackOffice/pages/Dashboard/pages/DashboardCategory/DashboardCategory.tsx";
+import CategoryList from "./pages/BackOffice/pages/Dashboard/pages/DashboardCategory/pages/CategoryList/CategoryList.tsx";
+import CategoryCreate from "./pages/BackOffice/pages/Dashboard/pages/DashboardCategory/pages/CategoryCreate/CategoryCreate.tsx";
+import CategoryRead from "./pages/BackOffice/pages/Dashboard/pages/DashboardCategory/pages/CategoryRead/CategoryRead.tsx";
+import CategoryUpdate from "./pages/BackOffice/pages/Dashboard/pages/DashboardCategory/pages/CategoryUpdate/CategoryUpdate.tsx";
+import CategoryDelete from "./pages/BackOffice/pages/Dashboard/pages/DashboardCategory/pages/CategoryDelete/CategoryDelete.tsx";
+import DashboardSocialMedia from "./pages/BackOffice/pages/Dashboard/pages/DashboardSocialMedia/DashboardSocialMedia.tsx";
+import SocialMediaList from "./pages/BackOffice/pages/Dashboard/pages/DashboardSocialMedia/pages/SocialMediaList/SocialMediaList.tsx";
+import SocialMediaCreate from "./pages/BackOffice/pages/Dashboard/pages/DashboardSocialMedia/pages/SocialMediaCreate/SocialMediaCreate.tsx";
+import SocialMediaRead from "./pages/BackOffice/pages/Dashboard/pages/DashboardSocialMedia/pages/SocialMediaRead/SocialMediaRead.tsx";
+import SocialMediaUpdate from "./pages/BackOffice/pages/Dashboard/pages/DashboardSocialMedia/pages/SocialMediaUpdate/SocialMediaUpdate.tsx";
+import SocialMediaDelete from "./pages/BackOffice/pages/Dashboard/pages/DashboardSocialMedia/pages/SocialMediaDelete/SocialMediaDelete.tsx";
 
 createRoot(document.getElementById("root") as Container).render(
   <StrictMode>
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<FrontOffice />} />
+      <CookiesProvider>
+        <Routes>
+          <Route path="/" element={<FrontOffice />} />
 
-        <Route path="back-office" element={<BackOffice />}>
-          <Route path="login" element={<AdminLogin />} />
+          <Route path="back-office" element={<BackOffice />}>
+            <Route path="login" element={<AdminLogin />} />
 
-          <Route path="dashboard" element={<Dashboard />}>
-            <Route path="home" element={<DashboardHome />} />
-            <Route path="airdrops" element={<DashboardAirdrop />}>
-              <Route path="list" element={<AirdropList />} />
-              <Route path="create" element={<AirdropCreate />} />
-              <Route path="read/:id" element={<AirdropRead />} />
-              <Route path="update/:id" element={<AirdropUpdate />} />
-              <Route path="delete/:id" element={<AirdropDelete />} />
+            <Route path="dashboard" element={<Dashboard />}>
+              <Route path="home" element={<DashboardHome />} />
+              <Route path="airdrop" element={<DashboardAirdrop />}>
+                <Route path="list" element={<AirdropList />} />
+                <Route path="create" element={<AirdropCreate />} />
+                <Route path="read/:id" element={<AirdropRead />} />
+                <Route path="update/:id" element={<AirdropUpdate />} />
+                <Route path="delete/:id" element={<AirdropDelete />} />
+              </Route>
+              <Route path="category" element={<DashboardCategory />}>
+                <Route path="list" element={<CategoryList />} />
+                <Route path="create" element={<CategoryCreate />} />
+                <Route path="read/:id" element={<CategoryRead />} />
+                <Route path="update/:id" element={<CategoryUpdate />} />
+                <Route path="delete/:id" element={<CategoryDelete />} />
+              </Route>
+              <Route path="social-media" element={<DashboardSocialMedia />}>
+                <Route path="list" element={<SocialMediaList />} />
+                <Route path="create" element={<SocialMediaCreate />} />
+                <Route path="read/:id" element={<SocialMediaRead />} />
+                <Route path="update/:id" element={<SocialMediaUpdate />} />
+                <Route path="delete/:id" element={<SocialMediaDelete />} />
+              </Route>
             </Route>
           </Route>
-        </Route>
-      </Routes>
+        </Routes>
+      </CookiesProvider>
     </BrowserRouter>
   </StrictMode>
 );

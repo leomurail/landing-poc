@@ -11,6 +11,9 @@ import {
   SidebarMenuItem,
 } from "@/components/shadcdn/ui/sidebar";
 import { Link } from "react-router";
+import LogoutButton from "../LogoutButton/LogoutButton";
+
+import "./AppSideBar.css";
 
 interface menuItem {
   title: string;
@@ -28,7 +31,17 @@ export default function AppSidebar() {
     },
     {
       title: "Airdrop",
-      url: "/back-office/dashboard/airdrops/list",
+      url: "/back-office/dashboard/airdrop/list",
+      icon: Inbox,
+    },
+    {
+      title: "Category",
+      url: "/back-office/dashboard/category/list",
+      icon: Inbox,
+    },
+    {
+      title: "Social media",
+      url: "/back-office/dashboard/social-media/list",
       icon: Inbox,
     },
   ];
@@ -73,6 +86,9 @@ export default function AppSidebar() {
                 );
               })}
             </SidebarMenu>
+            <div className="app-sidebar-logout">
+              <LogoutButton />
+            </div>
           </SidebarGroupContent>
         </SidebarGroup>
       </SidebarContent>
