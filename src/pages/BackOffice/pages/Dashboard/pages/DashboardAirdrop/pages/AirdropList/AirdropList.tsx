@@ -1,13 +1,11 @@
-import AirdropCard from "./components/AirdropCard/AirdropCard";
-
-import "./AirdropList.css";
+import DashboardCard from "../../../../components/DashboardCard/DashboardCard";
 
 export default function AirdropList() {
   return (
     <section id="airdrop-list">
-      <AirdropCard id={1} />
-      <AirdropCard id={2} />
-      <AirdropCard id={3} />
+      <DashboardCard id={1} title="Airdrop" name="airdrop" />
+      <DashboardCard id={2} title="Airdrop" name="airdrop" />
+      <DashboardCard id={3} title="Airdrop" name="airdrop" />
     </section>
   );
 }

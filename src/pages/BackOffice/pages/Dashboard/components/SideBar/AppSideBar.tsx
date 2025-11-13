@@ -31,7 +31,17 @@ export default function AppSidebar() {
     },
     {
       title: "Airdrop",
-      url: "/back-office/dashboard/airdrops/list",
+      url: "/back-office/dashboard/airdrop/list",
+      icon: Inbox,
+    },
+    {
+      title: "Category",
+      url: "/back-office/dashboard/category/list",
+      icon: Inbox,
+    },
+    {
+      title: "Social media",
+      url: "/back-office/dashboard/social-media/list",
       icon: Inbox,
     },
   ];

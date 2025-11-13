@@ -8,21 +8,21 @@ import {
 import { Input } from "@/components/shadcdn/ui/input";
 import type { FieldValues, UseFormReturn, Path } from "react-hook-form";
 
-interface FormFieldProps<TFieldValues extends FieldValues> {
-  form: UseFormReturn<TFieldValues>;
+interface FormFieldProps<T extends FieldValues> {
+  form: UseFormReturn<T>;
   placeholder?: string;
   label?: string;
-  name: Path<TFieldValues>;
+  name: Path<T>;
   type?: React.HTMLInputTypeAttribute;
 }
 
-export default function InputField<TFieldValues extends FieldValues>({
+export default function InputField<T extends FieldValues>({
   placeholder = "",
   label = "",
   form,
   name,
   type = "text",
-}: FormFieldProps<TFieldValues>) {
+}: FormFieldProps<T>) {
   return (
     <FormField
       control={form.control}
