@@ -1,5 +1,4 @@
 .card-feature {
-  width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,9 +12,17 @@ img {
 
 .card-feature .card-feature-title {
   font-size: var(--font-size-24);
+  text-align: center;
+  font-weight: 600;
 }
 
 .card-feature .card-feature-text {
   font-size: var(--font-size-20);
   text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .feature-to-benefit-step {
+    flex-direction: column;
+  }
 }

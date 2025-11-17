@@ -30,31 +30,35 @@ export default function Footer() {
       </div>
       <nav className="footer-nav">
         <h2 className="footer-nav-title">Explorer Keep Up</h2>
-        <a className="footer-nav-link" href="#hero">
-          Liste des airdrops
-        </a>
-        <a className="footer-nav-link" href="#features">
-          La solution
-        </a>
-        <a className="footer-nav-link" href="#pricing">
-          Chiffres clés
-        </a>
-        <a className="footer-nav-link" href="#contact">
-          Les fonctionnalités
-        </a>
-        <a className="footer-nav-link" href="#contact">
-          Comment ça marche ?
-        </a>
+        <div className="container-footer-nav-ling">
+          <a className="footer-nav-link" href="#hero">
+            Liste des airdrops
+          </a>
+          <a className="footer-nav-link" href="#features">
+            La solution
+          </a>
+          <a className="footer-nav-link" href="#pricing">
+            Chiffres clés
+          </a>
+          <a className="footer-nav-link" href="#contact">
+            Les fonctionnalités
+          </a>
+          <a className="footer-nav-link" href="#contact">
+            Comment ça marche ?
+          </a>
+        </div>
       </nav>
 
       <nav className="footer-nav">
-        <h2 className="footer-nav-title">A propos</h2>
-        <a className="footer-nav-link" href="#hero">
-          Mentions légales
-        </a>
-        <a className="footer-nav-link" href="#features">
-          Politique de confidentialité
-        </a>
+        <h2 className="footer-nav-title">À propos</h2>
+        <div className="container-footer-nav-ling">
+          <a className="footer-nav-link" href="#hero">
+            Mentions légales
+          </a>
+          <a className="footer-nav-link" href="#features">
+            Politique de confidentialité
+          </a>
+        </div>
       </nav>
 
       <div className="footer-container-cta">

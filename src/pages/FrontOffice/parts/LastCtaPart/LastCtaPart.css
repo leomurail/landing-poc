@@ -1,0 +1,43 @@
+#last-cta-part {
+  background-image: url("/img/webp/bg-last-cta.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: var(--gap-large-xl);
+  padding: 10npm0px 0;
+}
+
+.img-last-cta {
+  width: 400px;
+}
+
+.last-cta-container-part {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-medium-m);
+  padding-bottom: 100px;
+  padding-top: 60px;
+}
+.last-cta-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-medium-sm);
+}
+
+.last-cta-text .title-last-cta {
+  color: var(--color-text-secondary);
+}
+.last-cta-text .text-last-cta {
+  font-weight: var(--weight-medium);
+  font-size: var(--size-25);
+}

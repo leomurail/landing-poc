@@ -29,3 +29,20 @@
   grid-template-rows: repeat(3, auto); /* 3 lignes automatiques */
   gap: 20px;
 }
+
+@media (max-width: 1000px) {
+  #airdrops-cards-content {
+    grid-template-columns: repeat(2, 1fr); /* 3 colonnes égales */
+    grid-template-rows: repeat(2, auto); /* 3 lignes automatiques */
+  }
+}
+
+@media (max-width: 768px) {
+  #airdrops-cards-content {
+    grid-template-columns: repeat(1, 1fr); /* 3 colonnes égales */
+    grid-template-rows: repeat(1, auto); /* 3 lignes automatiques */
+  }
+  #airdrop-list-part {
+    padding: 20px;
+  }
+}

@@ -18,3 +18,9 @@
   width: 222px;
   text-align: center;
 }
+
+@media (max-width: 768px) {
+  .hero-card .hero-card-text {
+    display: none;
+  }
+}

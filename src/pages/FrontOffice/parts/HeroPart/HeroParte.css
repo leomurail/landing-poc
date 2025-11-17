@@ -53,7 +53,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: var(--gap-small-xl);
 }
 .hero-content-text .hero-text-claim {
   font-size: var(--size-25);

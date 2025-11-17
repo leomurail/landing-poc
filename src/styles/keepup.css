@@ -105,9 +105,9 @@
   --gap-large-2xl: var(--size-200);
 
   /*font size phone*/
-  --phone-font-size-h1: var(--font-size-22);
-  --phone-font-size-h2: var(--font-size-20);
-  --phone-font-size-h3: var(--font-size-18);
+  --phone-font-size-h1: var(--font-size-32);
+  --phone-font-size-h2: var(--font-size-28);
+  --phone-font-size-h3: var(--font-size-24);
   --phone-font-size-h4: var(--font-size-16);
   --phone-font-size-h5: var(--font-size-15);
   --phone-font-size-h6: var(--font-size-15);

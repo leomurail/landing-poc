@@ -19,16 +19,19 @@
   background-color: var(--color-pink);
 }
 
-.btn.l {
+.btn.l span {
   font-size: var(--font-size-18);
+  font-weight: var(--font-weight-label);
 }
 
-.btn.m {
+.btn.m span {
   font-size: var(--font-size-16);
+  font-weight: var(--font-weight-label);
 }
 
-.btn.s {
+.btn.s span {
   font-size: var(--font-size-14);
+  font-weight: var(--font-weight-label);
 }
 
 .btn-img {
