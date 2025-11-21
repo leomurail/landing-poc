@@ -31,15 +31,11 @@
   font-size: var(--font-size-20);
 }
 
-@media (max-width: 1000px) {
-  .key-stat-part {
-    width: 100%;
-  }
-}
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .key-stat {
     flex-direction: column;
     gap: var(--gap-small-xl);
+    align-items: flex-start;
   }
   .key-stat-separateur {
     width: 100%;

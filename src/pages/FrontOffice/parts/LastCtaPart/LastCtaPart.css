@@ -9,7 +9,7 @@
   justify-content: center;
   text-align: center;
   gap: var(--gap-large-xl);
-  padding: 10npm0px 0;
+  padding: 100px 20px;
 }
 
 .img-last-cta {
@@ -36,8 +36,29 @@
 
 .last-cta-text .title-last-cta {
   color: var(--color-text-secondary);
+  text-align: start;
 }
 .last-cta-text .text-last-cta {
   font-weight: var(--weight-medium);
-  font-size: var(--size-25);
+  font-size: var(--font-size-24);
+  text-align: start;
+}
+
+@media (max-width: 768px) {
+  #last-cta-part {
+    justify-content: flex-start;
+    background-image: url("/img/webp/phone-bg-last-cta.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .last-cta-container-part {
+    width: 100%;
+  }
+  #img-container-last-cta {
+    display: none;
+  }
+  .last-cta-text .title-last-cta {
+    font-size: var(--font-size-36);
+  }
 }

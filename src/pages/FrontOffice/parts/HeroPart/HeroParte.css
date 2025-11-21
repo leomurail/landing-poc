@@ -1,4 +1,4 @@
-#hero-part {
+.hero-part-container {
   background-image: url("/img/webp/bg-hero.webp");
   background-size: cover;
   background-position: center;
@@ -7,11 +7,17 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 140px 0px 40px 0px;
+}
+#hero-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   gap: var(--gap-large-l);
-  padding: 140px 0 40px 0;
 }
-#hero-part .round-btn {
+.hero-part-container .round-btn {
   position: absolute;
   top: 95%;
   left: 95%;
@@ -73,4 +79,28 @@
   display: flex;
   gap: var(--gap-medium-sm);
   justify-content: center;
+}
+@media (max-width: 768px) {
+  .hero-part-container {
+    background-image: url("/img/webp/phone-bg-hero.webp");
+    gap: var(--gap-large-xl);
+    padding: 200px 10px 30px 10px;
+  }
+  #hero-part {
+    gap: var(--gap-medium-m);
+  }
+  .hero-content-logo-title .hero-title {
+    font-size: var(--font-size-32);
+  }
+  .hero-content {
+    padding-bottom: 0;
+  }
+
+  .hero-container-cards {
+    gap: var(--gap-small-m);
+  }
+
+  .hero-part-container .round-btn {
+    position: static;
+  }
 }

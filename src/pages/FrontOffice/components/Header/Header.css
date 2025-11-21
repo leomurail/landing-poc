@@ -1,9 +1,19 @@
 .header {
+  background: linear-gradient(to bottom, #121212 30%, rgba(18, 18, 18, 0) 90%);
+  backdrop-filter: blur(12px);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header-desktop {
   padding: 15px 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(to bottom, #121212 55%, transparent 130%);
 }
 
 .header-nav {
@@ -14,4 +24,34 @@
 
 .header-logo img {
   width: 150px;
+}
+
+.header-phone {
+  display: none;
+}
+
+/* header phone */
+@media (max-width: 1200px) {
+  .header-desktop {
+    display: none;
+  }
+  .header-phone {
+    display: flex;
+  }
+  .header-phone {
+    padding: 70px 30px 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .phone-header-nav {
+    display: flex;
+    gap: var(--gap-medium-sm);
+    padding: 10px;
+  }
+
+  .phone-header-logo img {
+    width: 40px;
+  }
 }

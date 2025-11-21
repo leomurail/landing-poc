@@ -23,4 +23,10 @@
   .hero-card .hero-card-text {
     display: none;
   }
+  .hero-card .hero-card-title {
+    font-size: var(--font-size-14);
+  }
+  .hero-card {
+    padding: 20px 15px;
+  }
 }
